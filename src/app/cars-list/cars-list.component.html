@@ -1,0 +1,8 @@
+<hr>
+<div *ngFor="let car of cars">
+	{{car.name}} |
+	{{car.make}} |
+	{{car.year}} |
+	{{car.description}} |
+  <a *ngIf="car.name == 'Toyota'" (click)="onFindMore()">Find more</a>
+</div>
