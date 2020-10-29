@@ -9,7 +9,7 @@ import { ProductListComponent } from "./product-list/product-list.component";
 import { ProductAlertsComponent } from "./product-alerts/product-alerts.component";
 import { CarsListComponent } from './cars-list/cars-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { CartServiceService } from './cart-service.service';
+//import { CartServiceService } from './cart-service.service';
 import { CartService } from './cart.service';
 
 @NgModule({
@@ -30,7 +30,7 @@ import { CartService } from './cart.service';
     ProductDetailsComponent
   ],
   bootstrap: [AppComponent],
-  providers: [CartServiceService, CartService]
+  providers: [/*CartServiceService,*/ CartService]
 })
 export class AppModule {}
 
