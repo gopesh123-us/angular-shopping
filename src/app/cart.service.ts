@@ -1,25 +1,23 @@
 import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class CartService {
   constructor() {}
-  items: [];
-
+  items = [];
 
   //note - procuct is not defined -- why?
-  addToCart(product){
+  addToCart(product) {
     this.items.push(product);
   }
 
-  getItems(){
+  getItems() {
     return this.items;
   }
 
-  clearCart(){
+  clearCart() {
     this.items = [];
     return this.items;
   }
-
 }
